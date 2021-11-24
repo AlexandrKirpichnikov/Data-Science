@@ -1,0 +1,1 @@
+print(np.cov(a.T)[0, 1])
