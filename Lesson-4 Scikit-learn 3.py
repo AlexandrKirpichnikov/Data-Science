@@ -1,0 +1,10 @@
+labels_test = kmeans.predict(X_test_scaled)
+
+print('Средние значения price:')
+print('Кластер 0: {}'.format(y_test[labels_test == 0].mean()))
+print('Кластер 1: {}'.format(y_test[labels_test == 1].mean()))
+print('Кластер 2: {}'.format(y_test[labels_test == 2].mean()))
+print('Средние значения CRIM:')
+print('Кластер 0: {}'.format(X_test.loc[labels_test == 0, 'CRIM'].mean()))
+print('Кластер 1: {}'.format(X_test.loc[labels_test == 1, 'CRIM'].mean()))
+print('Кластер 2: {}'.format(X_test.loc[labels_test == 2, 'CRIM'].mean()))
